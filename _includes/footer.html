@@ -1,0 +1,25 @@
+<div class="container-fluid px-0">
+    <div id="footer">
+        {% for line in page.footer %}
+        <p>
+            {% for link in line %}
+            <a href="{{ link.url }}">{{link.text}}</a>{% unless link == (line | last) %} | {% endunless %}
+            {% endfor %}
+        </p>
+        {% endfor %}
+        <p>Fr. Agnel Ashram, Bandstand, Bandra (W). Mumbai 400 050. MH. IN</p>
+        <p>(91)-(022)-26707440, 26287250</p>
+        <p></p>
+        <ul class="cnss-social-icon " style="text-align:center;">
+            <li class="cn-fa-facebook cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="/" title="Facebook" style="width:20px;height:20px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i
+                    title="Facebook" style="font-size:12px;" class="fa fa-facebook"></i></a>
+            </li>
+            <li class="cn-fa-twitter cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="/" title="Twitter" style="width:20px;height:20px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i
+                    title="Twitter" style="font-size:12px;" class="fa fa-twitter"></i></a>
+            </li>
+            <li class="cn-fa-linkedin cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="/" title="LinkedIn" style="width:20px;height:20px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i
+                    title="LinkedIn" style="font-size:12px;" class="fa fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
