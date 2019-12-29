@@ -1,11 +1,7 @@
 <div class="container-fluid px-0">
     <div id="footer">
         {% for line in page.footer %}
-        <p>
-            {% for link in line %}
-            <a href="{{ link.url }}">{{link.text}}</a>{% unless link == (line | last) %} | {% endunless %}
-            {% endfor %}
-        </p>
+        <p> | {% for link in line %}<a href="{{ link.url }}">{{link.text}}</a> | {% endfor %} </p>
         {% endfor %}
         <p>Fr. Agnel Ashram, Bandstand, Bandra (W). Mumbai 400 050. MH. IN</p>
         <p>(91)-(022)-26707440, 26287250</p>
