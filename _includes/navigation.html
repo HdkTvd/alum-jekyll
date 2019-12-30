@@ -5,11 +5,11 @@
             {% for navtab in page.header.navbar.navtabs %}
             {% if page.url == navtab.link %}
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ navtab.link }}" style="text-align: center; color: black;">{{ navtab.text}}</a>
+                    <a class="nav-link active" href="#" style="text-align: center; color: black;">{{ navtab.text}}</a>
                 </li>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ navtab.link }}" style="text-align: center; color: black">{{ navtab.text}}</a>
+                    <a class="nav-link" href="{{ navtab.link }}" style="text-align: center; color: rgb(31, 31, 31)">{{ navtab.text}}</a>
                 </li>
             {% endif %}
             {% endfor %}
