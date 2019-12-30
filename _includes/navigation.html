@@ -1,15 +1,15 @@
-<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" style="background-color: #192849;">
-    <div class="navbar-nav ">
+<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar nav-underline  shadow-sm" style="background-color: #ecbd00;">
+    <div class="navbar-nav">
         <ul class="navbar-expand navbar-nav bd-navbar-nav flex-column flex-sm-row">
             <li style="height: 5px; ">&nbsp;</li>
             {% for navtab in page.header.navbar.navtabs %}
             {% if page.url == navtab.link %}
                 <li class="nav-item">
-                    <a class="nav-link {% if page.url == navtab.link %} active {% endif %}" href="{{ navtab.link }}" style="text-align: center; text-align: center; color: #ffffff;">{{ navtab.text}}</a>
+                    <a class="nav-link active" href="{{ navtab.link }}" style="text-align: center; color: black;">{{ navtab.text}}</a>
                 </li>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link {% if page.url == navtab.link %} active {% endif %}" href="{{ navtab.link }}" style="text-align: center; text-align: center; color: #dadada">{{ navtab.text}}</a>
+                    <a class="nav-link" href="{{ navtab.link }}" style="text-align: center; color: black">{{ navtab.text}}</a>
                 </li>
             {% endif %}
             {% endfor %}
