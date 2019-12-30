@@ -9,7 +9,7 @@
                 </li>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ navtab.link }}" style="text-align: center; color: rgb(31, 31, 31)">{{ navtab.text}}</a>
+                    <a class="nav-link" href='{{ navtab.link  | remove_first: "/" | default: "/" }}' style="text-align: center; color: rgb(31, 31, 31)">{{ navtab.text}}</a>
                 </li>
             {% endif %}
             {% endfor %}
