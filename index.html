@@ -61,7 +61,15 @@ footer:
         <!-- Recent Updates -->
         {% include recent_updates.html %}
         <!-- Teaser to Photo Gallery -->
-        {% include gallery_teaser.html %}
+        <div class="row">
+          <div class="col-lg-6">
+            {% include events_teaser.html %}
+          </div>
+          <div class="col-lg-6">
+            {% include events_teaser.html %}
+          </div>
+        </div>
+        <!-- Teaser to Events -->
       </div>
     </main>
       <!-- CUSTOM CONTENT ENDS   --------------------------------------------------------------------------------------------------------------------------->
