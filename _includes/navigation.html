@@ -2,7 +2,7 @@
     <div class="navbar-nav">
         <ul class="navbar-expand navbar-nav bd-navbar-nav flex-column flex-sm-row">
             <li style="height: 5px; ">&nbsp;</li>
-            {% for navtab in page.header.navbar.navtabs %}
+            {% for navtab in site.data.navigation.navbar.navtabs %}
             {% if page.url == navtab.link %}
                 <li class="nav-item">
                     <a class="nav-link active" href="#" style="text-align: center; color: black;">{{ navtab.text}}</a>

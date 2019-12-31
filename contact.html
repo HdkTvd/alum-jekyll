@@ -2,21 +2,7 @@
 layout: base
 title: About | Alumni Portal, FRCRCE (Bandra)
 custom_css: []
-header:
-    navbar:
-        navtabs:
-            - text: Home
-              link: /
-            - text: Connect
-              link: null
-            - text: About
-              link: /about.html
-            - text: Newsletter
-              link: /newsletter.html
-            - text: Distinguished Alumni
-              link: /distinguished_alumni.html
-            - text: Contact
-              link: /contact.html
+
 custom:
     desks:
         -
@@ -37,13 +23,6 @@ custom:
             quote : |
               Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
             contact : null
-
-footer:
-    - 
-        - text : Home
-          link : /
-        - text : Contact Us
-          link : /
 ---
 {% for desk in page.custom.desks %}
 <div class="row featurette mx-auto">
@@ -57,3 +36,4 @@ footer:
 </div>
 <hr class="featurette-divider">
 {% endfor %}
+{% include contact_form.html %}
