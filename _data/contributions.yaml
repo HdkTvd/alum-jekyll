@@ -1,0 +1,38 @@
+support:
+  teams:
+    - title: Team ABADHA
+      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
+      image: assets/images/default.svg
+      link: https://www.facebook.com/teamabadha.crce/
+    - title: Team MAVERICKS
+      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
+      image: assets/images/default.svg
+      link: https://mavericks-7734b.firebaseapp.com/
+    - title: Team AVISROTA
+      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
+      image: assets/images/default.svg
+      link: https://www.facebook.com/AVISROTACRCE/
+    - title: Team CFR
+      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
+      image: assets/images/default.svg
+      link: http://www.frcrce.ac.in/index.php/students/project-groups/cfr
+    - title: Team ROBOCON
+      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
+      image: assets/images/default.svg
+      link: http://roboconcrce.org/
+    - title: Team VAYUSHASTRA
+      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
+      image: assets/images/default.svg
+      link: http://www.vaayushastra.in/
+alumnis:
+  - name: John Doe
+    profile_img: https://picsum.photos/id/1/150/300
+    year: 2004
+    role: Entrepreneur
+    contributions: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ab quisquam aspernatur! Numquam suscipit dicta dolorum nostrum itaque voluptatum recusandae explicabo.
+  - name: Jane Doe
+    profile_img: https://picsum.photos/id/2/150/300
+    year: 2013
+    role: Android Developer
+    contributions: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ab quisquam aspernatur! Numquam suscipit dicta dolorum nostrum itaque voluptatum recusandae explicabo.
+    
