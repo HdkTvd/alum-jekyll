@@ -12,3 +12,5 @@ navbar:
       link: /distinguished_alumni.html
     - text: Contact
       link: /contact.html
+    - text: Contributions
+      link: /contributions.html
