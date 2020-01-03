@@ -1,27 +1,61 @@
 ---
-layout: base
+layout: null
 title: Home | Alumni Portal, FRCRCE (Bandra)
 custom_css: []
-header:
-    navbar:
-        navtabs:
-            - text: Home
-              link: /
-            - text: Connect
-              link: null
-            - text: About
-              link: /about.html
-            - text: Newsletter
-              link: /newsletter.html
-            - text: Distinguished Alumni
-              link: /distinguished_alumni.html
-            - text: Contact
-              link: /contact.html
 
-footer:
-    - 
-        - text : Home
-          link : null
-        - text : Contact Us
-          link : null
+custom:
+  poster_image: assets/images/poster_image.jpg
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{page.title}}</title>
+    <!-- Bootstrap core CSS -->
+    <style class="anchorjs"></style>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Documentation extras -->
+    <link href="assets/css/docs.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Extenal CSS -->
+    <link rel="stylesheet" href="assets/css/basic_layout.css">
+    {% for css in page.custom_css %}
+    <link rel="stylesheet" href="{{ css }}">
+    {% endfor %}
+</head>
+
+<body style="background-image: url({{page.custom.poster_image}}); background-size:cover; background-position: center bottom; background-repeat: no-repeat;">
+    {% include logo_header.html %}
+    {% include navigation.html %}
+    <main role="main" class="container-fluid m-0 p-0">
+      <div class="container px-0 pt-3 pb-3 mt-5 mb-1 text-black rounded shadow" style="background-color: #f6f6f6f0;">
+        <!-- CUSTOM CONTENT STARTS --------------------------------------------------------------------------------------------------------------------------->
+        <!-- Welcome Banner -->
+        {% include welcome.html %}
+        <!-- Recent Updates -->
+        {% include recent_updates.html %}
+        <!-- Teaser to Photo Gallery -->
+        <div class="row">
+          <div class="col-lg-6">
+            {% include events_teaser.html %}
+          </div>
+          <div class="col-lg-6">
+            {% include gallery_teaser.html %}
+          </div>
+        </div>
+        <!-- Teaser to Events -->
+      </div>
+    </main>
+      <!-- CUSTOM CONTENT ENDS   --------------------------------------------------------------------------------------------------------------------------->
+    {% include footer.html %}
+    <!-- Optional JavaScript START -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript END -->
+</body>
+</html>

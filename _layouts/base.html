@@ -19,20 +19,20 @@
     {% endfor %}
 </head>
 
-<body>
-    <div class="container-xl px-0" style="background-color: whitesmoke; box-shadow: 0px 0px 12px 0px black;">
-        {% include logo_header.html %}
-        {% include navigation.html %}
+<body class="bg-light">
+    {% include logo_header.html %}
+    {% include navigation.html %}
+    <div class="container pt-4 pb-3 shadow">
         <!-- CUSTOM CONTENT STARTS --------------------------------------------------------------------------------------------------------------------------->
         {{ content }}
         <!-- CUSTOM CONTENT ENDS   --------------------------------------------------------------------------------------------------------------------------->
-        {% include footer.html %}
-        <!-- Optional JavaScript START -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Optional JavaScript END -->
     </div>
+    {% include footer.html %}
+    <!-- Optional JavaScript START -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript END -->
 </body>
 
 </html>
