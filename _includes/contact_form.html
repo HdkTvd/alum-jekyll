@@ -1,19 +1,12 @@
 <div class="pt-3 pb-3 px-3 mt-4 bg-white rounded shadow-sm">
   <h4 class="display-5 font-italic text-center mb-4">Contact us for<br>
-    <strong>Feedback, Suggestions or Inquiry</strong><br>
+    <strong>Feedback, Suggestions or Enquiry</strong><br>
   </h4>
   <form class="needs-validation" novalidate>
-    <div class="form-row">
+  <div class="form-row">
       <div class="col-md-4 mb-3">
-        <label for="validationCustom01">First name</label>
+        <label for="validationCustom01">Name</label>
         <input type="text" class="form-control" id="validationCustom01" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationCustom02">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" required>
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -25,9 +18,16 @@
           Looks good!
         </div>
       </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom000">Phone no.</label>
+        <input type="number" class="form-control" id="validationCustom03" minlength="10" maxlength="10" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
     </div>  
     <div class="input-group mb-2" style="height: 10rem;">
-      <textarea value="Write to us here..." type="text" id="noob" class="form-control" aria-label="Write Here..."></textarea>
+      <textarea value="Write to us here..." type="text" id="noob" class="form-control" aria-label="Write Here..." placeholder="Write a Message"></textarea>
     </div>
     <button class="btn btn-primary" type="submit">Send</button>
   </form>
