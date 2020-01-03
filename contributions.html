@@ -4,12 +4,12 @@ title: Contributions | Alumni Portal, FRCRCE (Bandra)
 custom_css: []
 ---
 <!-- Contributions CONTENT STARTS -->
-<h4 class="display-4">Financial Support to Technical Teams</h4>	
+<h4 class="display-6">Financial Support to Technical Teams</h4>	
 <p>Alumnis can choose from a wide range of Technical Teams to support. These includes:</p><br>
 {% for team in site.data.contributions.support.teams %}
 	<div class="row featurette mx-auto">
 		<div class="col-md-7">
-			<h4 class="featurette-heading"><a href="{{team.link}}" target="_blank">{{ team.title }}</a></h4>
+			<h4 class="featurette-heading"><a href="http://docs.google.com/gview?embedded=true&url={{team.link}}" target="_blank">{{ team.title }}</a></h4>
 			<p class="lead">{{ team.text | newline_to_br }}<small class="text-muted" style="float: right; padding-top: 5px;"><a href="{{team.pdf}}" target="_blank">Read more</a></small></p>
 		</div>
 		<div class="col-md-5">
@@ -17,14 +17,19 @@ custom_css: []
 		</div>
 	</div><br>
 {% endfor %}
+<hr class="featurette-divider">
 <h6 class="display-4">Financial Support for Infrastructure Development</h6>		
 <p>[Infrastructure Development Content] Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad sed modi voluptates animi nostrum corrupti ullam unde qui dolor voluptatibus fuga hic dolorem magnam ducimus distinctio, commodi, facere eum!</p>
+<hr class="featurette-divider">
 <h6 class="display-4">Scholarships to ECB</h6>		
 <p>[Scholarships to ECB Content] Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad sed modi voluptates animi nostrum corrupti ullam unde qui dolor voluptatibus fuga hic dolorem magnam ducimus distinctio, commodi, facere eum!</p>
+<hr class="featurette-divider">
 <h6 class="display-4">Awards to Meritorius Students</h6>		
 <p>[Awards to Meritorius Students Content] Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad sed modi voluptates animi nostrum corrupti ullam unde qui dolor voluptatibus fuga hic dolorem magnam ducimus distinctio, commodi, facere eum!</p>
+<hr class="featurette-divider">
 <h6 class="display-4">Why to Give?</h6>
 <p>[Importance of Alumni in different aspects] Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ab quisquam aspernatur! Numquam suscipit dicta dolorum nostrum itaque voluptatum recusandae explicabo, ratione nulla, voluptas voluptatem consequuntur beatae temporibus, praesentium soluta.</p>
+<hr class="featurette-divider">
 <h6 class="display-4">Contributions by Our Alumnis</h6><br>
 <!-- CARD STARTS -->
 {% for alumni in site.data.contributions.alumnis %}
@@ -43,5 +48,6 @@ custom_css: []
 		</div>
 	</div>
 {% endfor %}
+<hr class="featurette-divider">
 <!-- CARD ENDS -->
 <!-- Contributions CONTENT ENDS -->
