@@ -3,7 +3,7 @@ navbar:
     - text: Home
       link: /
     - text: Connect
-      link: https://frcrce.almaconnect.com
+      link: /https://frcrce.almaconnect.com
     - text: About
       link: /about.html
     - text: Newsletter
