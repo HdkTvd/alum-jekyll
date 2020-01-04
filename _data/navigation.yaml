@@ -7,7 +7,7 @@ navbar:
     - text: About
       link: /about.html
     - text: Activities Report
-      link: /newsletter.html
+      link: /activity_report.html
     #- text: Distinguished Alumni
     #  link: /distinguished_alumni.html
     - text: Contact
