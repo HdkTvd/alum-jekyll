@@ -10,26 +10,21 @@ support:
       image: assets/images/team_mavericks.jpg
       link: https://mavericks-7734b.firebaseapp.com/
       pdf: assets/pdf/mavericks.pdf
-    - title: Team AVISROTA
-      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
-      image: assets/images/team_avisrota.jpg
-      link: https://www.facebook.com/AVISROTACRCE/
-      pdf: NULL
     - title: Team CFR
-      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
+      text: CRCE Formula racing team is a Fr.Conceicao Rodrigues college of engineering’s Formula SAE team. Driven by mutual passion for automobiles and zeal to learn formed the essence of CRCE Formula Racing. CRCE Formula racing provides an unrivalled learning experience,that allows engineers to integrate classroom concepts with practical applications.
       image: assets/images/default.svg
       link: http://www.frcrce.ac.in/index.php/students/project-groups/cfr
-      pdf: NULL
+      pdf: assets/pdf/cfr.pdf
     - title: Team ROBOCON
       text: The Asia-Pacific Robot contest (ABU Robocon) is an international Robotics competition which witnesses the best robots from various nations competing against each other for a particular task based on the culture of the country hosting it.
       image: assets/images/team_robocon.jpg
       link: http://roboconcrce.org/
       pdf: assets/pdf/robocon.pdf
     - title: Team VAYUSHASTRA
-      text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium repellendus expedita. Dignissimos distinctio nihil adipisci ea qui voluptas voluptate et unde accusantium nisi! Deleniti aut eos officia accusantium voluptatum!
+      text: A student team focused on designing and building state of the art UAVs (Unmanned Aerial Vehicles) for participation in the SAE Aero Design Competition.
       image: assets/images/team_vayu.jpeg
       link: http://www.vaayushastra.in/
-      pdf: NULL
+      pdf: assets/pdf/vayushastra.pdf
     - title: Project-Cell
       text: | 
             Currently working for 3 projects competing under Eyantra Ideas Competition.
