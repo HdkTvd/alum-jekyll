@@ -9,8 +9,8 @@ custom_css: []
 {% for team in site.data.contributions.support.teams %}
 	<div class="row featurette mx-auto">
 		<div class="col-md-7">
-			<h4 class="featurette-heading"><a href="https://drive.google.com/viewerng/viewer?embedded=true&url={{team.link}}" target="_blank">{{ team.title }}</a></h4>
-			<p class="lead">{{ team.text | newline_to_br }}<small class="text-muted" style="float: right; padding-top: 5px;"><a href="{{team.pdf}}" target="_blank">Read more</a></small></p>
+			<h4 class="featurette-heading"><a href="{{team.link}}" target="_blank">{{ team.title }}</a></h4>
+			<p class="lead">{{ team.text | newline_to_br }}<small class="text-muted" style="float: right; padding-top: 5px;"><a href="https://drive.google.com/viewerng/viewer?embedded=true&url={{team.pdf}}" target="_blank">Read more</a></small></p>
 		</div>
 		<div class="col-md-5">
 			<img class="featurette-image mx-auto d-block" alt="500x500" style="width: 200px; height: 200px;" src="{{team.image}}">
