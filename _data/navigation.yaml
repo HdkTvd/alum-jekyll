@@ -8,8 +8,8 @@ navbar:
       link: /about.html
     - text: Activities Report
       link: /newsletter.html
-    - text: Distinguished Alumni
-      link: /distinguished_alumni.html
+    #- text: Distinguished Alumni
+    #  link: /distinguished_alumni.html
     - text: Contact
       link: /contact.html
     - text: Contributions
