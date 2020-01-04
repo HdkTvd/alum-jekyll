@@ -6,10 +6,10 @@ navbar:
       link: /https://frcrce.almaconnect.com
     - text: About
       link: /about.html
-    - text: Newsletter
+    - text: Activities Report
       link: /newsletter.html
-    - text: Distinguished Alumni
-      link: /distinguished_alumni.html
+    #- text: Distinguished Alumni
+    #  link: /distinguished_alumni.html
     - text: Contact
       link: /contact.html
     - text: Contributions
