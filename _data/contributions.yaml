@@ -38,14 +38,10 @@ support:
       pdf: assets/pdf/project-cell.pdf
 
 alumnis:
-  - name: John Doe
-    profile_img: https://s3.amazonaws.com/uifaces/faces/twitter/enda/128.jpg
-    year: 2004
-    role: Entrepreneur
-    contributions: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ab quisquam aspernatur! Numquam suscipit dicta dolorum nostrum itaque voluptatum recusandae explicabo.
-  - name: Jane Doe
-    profile_img: https://s3.amazonaws.com/uifaces/faces/twitter/csswizardry/128.jpg
-    year: 2013
-    role: Android Developer
-    contributions: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ab quisquam aspernatur! Numquam suscipit dicta dolorum nostrum itaque voluptatum recusandae explicabo.
+  - name: Mr. Suresh Balakrishnan
+    text: Through his foundation STULZ CHSPL (INDIA) PVT. LTD has been providing financial sponsorship of Rs. 5 Lakhs to economically backward but needy students since year 2018.
+    batch: 1995, Production Batch
+  - name: Production Batch, 1991
+    text: Donated around 2 lakhs towards the purchase of Solidworks,3D CAD design software, analysis software, and product data management software.
+    batch: null
     
