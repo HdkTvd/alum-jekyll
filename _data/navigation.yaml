@@ -14,3 +14,5 @@ navbar:
       link: /contact.html
     - text: Contributions
       link: /contributions.html
+    - text: Blogs
+      link: /blog.html
