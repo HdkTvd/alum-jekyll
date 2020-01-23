@@ -1,55 +1,92 @@
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
-    $(function () {
-        $(document).on('click', '.btn-add', function (e) {
-            e.preventDefault();
-            var controlForm = $('#myRepeatingFields:first'),
-                currentEntry = $(this).parents('.entry:first'),
-                newEntry = $(currentEntry.clone()).appendTo(controlForm);
-            newEntry.find('input').val('');
-            controlForm.find('.entry:not(:last) .btn-add')
-                .removeClass('btn-add').addClass('btn-remove')
-                .removeClass('btn-success').addClass('btn-danger')
-                .html('');
-        }).on('click', '.btn-remove', function (e) {
-            e.preventDefault();
-            $(this).parents('.entry:first').remove();
-            return false;
-        });
-    });
-</script>
-<style>
-    .entry:not(:first-of-type) {
-        margin-top: 10px;
+    function checkvalid() {
+        var amount = document.getElementById('inputAmount');
+        var inputAmount = document.forms['RegForm']['amount'].value;
+        var inputPAN = document.getElementById('inputPAN').value;
+        var errcheck = document.getElementById('errcheck');
+        var submitbutton = document.getElementById('submit');
+        amount.onekeyup = function(event){
+            if((inputAmount>2000) && (inputPAN=='')){
+                errcheck.innerHTML = 'Please enter PAN no';
+                submitbutton.setAttribute("inactive",true)
+                return false;
+            }
+            else{
+                submitbutton.removeAttribute("inactive",false);
+                return true;
+            }
+        }();
     }
-</style>
-<form action="https://formspree.io/xknoeave" method="POST">
-    <strong style="text-align:center; font-size: 20px;">Enter transaction details</strong>
-        <div class="form-row">
-            <div class="form-group col-md-3">
-                <label for="inputId">Transact Id</label>
-                <input type="number" class="form-control" name="inputId" required>
-            </div>
+    function submitCheck(){
+        var amount = document.getElementById('inputAmount');
+        var inputAmount = document.forms['RegForm']['amount'].value;
+        var inputPAN = document.getElementById('inputPAN').value;
+        var errcheck = document.getElementById('errcheck');
+        var submitbutton = document.getElementById('submit');
+        submitbutton.onsubmit = function(event){
+            if((inputAmount>2000) && (inputPAN=='')){
+                alert("Enter your PAN number");
+                event.preventDefault();
+                event.stopPropagation();
+                return false;
+            }
+            else{
+                return true;
+        }
+    }
+}
+</script>
+<form name="RegForm"  action="https://formspree.io/xknoeave"  method="POST">
+    <div class="form-row">
+        <div class="form-group col-xs-2"></div>
+        <div class="form-group col-md-5">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Joe Smith" name="name" required
+                autofocus>
         </div>
-    <div id="myRepeatingFields" >
-        <div class="entry ">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputName">Name</label>
-                    <input type="text" class="form-control" name="inputName" >
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputAmount">Amount</label>
-                    <input type="text" class="form-control" name="inputAmount" required>
-                </div>
-            </div>
-            <button type="button" class="btn btn-success btn-md btn-add">
-                <span aria-hidden="true">Add another donor</span>
-            </button>
+        <div class="form-group col-md-1"></div>
+        <div class="form-group col-md-5">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="example@email.com" name="emailid"
+                required>
         </div>
     </div>
-    <div style="text-align: center;">
-        <input type="submit" class="btn btn-outline-success">
+    <div class="form-row">
+        <div class="form-group col-xs-2"></div>
+        <div class="form-group col-md-5">
+            <label for="inputId">Transaction Id</label>
+            <input type="text" class="form-control" id="inputId" name="transactId" required>
+        </div>
+        <div class="form-group col-md-1"></div>
+        <div class="form-group col-md-5">
+            <label for="inputchoice">Donation Towards:</label>
+            <select id="inputchoice" class="form-control" name="choice" required>
+                <option selected>Select...</option>
+                <option value="ABADHA">ABADHA</option>
+                <option value="Mavericks">Mavericks</option>
+                <option value="CFR">CFR</option>
+                <option value="Robocon">Robocon</option>
+                <option value="Vayushastra">Vayushastra</option>
+                <option value="ProjectCell">ProjectCell</option>
+                <option value="AgnelCharityTrust">Agnel Charity Trust</option>
+                <option value="HalfSponsorship">Half Sponsorship</option>
+                <option value="FullSponsorship">Full Sponsorship</option>
+            </select>
+        </div>
     </div>
+    <div class="form-row">
+        <div class="form-group col-xs-2"></div>
+        <div class="form-group col-md-5">
+            <label for="inputAmount">Amount</label>
+            <input type="number" onkeyup="return checkvalid()" class="form-control" id="inputAmount" name="amount" required>
+        </div>
+        <div class="form-group col-md-1"></div>
+        <div class="form-group col-md-5">
+            <label for="inputPAN">Pan No <span style="font-weight: 0.7rem;font-size: 0.7rem;">(On amount above
+                    2000)</span></label>
+            <input type="text" class="form-control" id="inputPAN" name="PAN" >
+            <p id="errcheck"></p>
+        </div>
+    </div>
+    <input id="submit" type="submit" class="btn btn-outline-success" onsubmit="return submitCheck()">Sign in</button>
 </form>
