@@ -1,0 +1,30 @@
+
+  images1:
+  - img: assets\images\photogallery\1.JPG
+  - img: assets\images\photogallery\2.JPG
+  - img: assets\images\photogallery\3.JPG
+  - img: assets\images\photogallery\4.JPG
+  - img: assets\images\photogallery\5.JPG
+  - img: assets\images\photogallery\6.JPG
+  images2:
+  - img: assets\images\photogallery\9.JPG
+  - img: assets\images\photogallery\10.JPG
+  - img: assets\images\photogallery\11.JPG
+  - img: assets\images\photogallery\12.JPG
+  - img: assets\images\photogallery\13.JPG
+  - img: assets\images\photogallery\14.JPG
+  images3:
+  - img: assets\images\photogallery\17.JPG
+  - img: assets\images\photogallery\18.JPG
+  - img: assets\images\photogallery\19.JPG
+  - img: assets\images\photogallery\20.JPG
+  - img: assets\images\photogallery\21.JPG
+  - img: assets\images\photogallery\22.JPG
+  images4:
+  - img: assets\images\photogallery\15.JPG
+  - img: assets\images\photogallery\16.JPG
+  - img: assets\images\photogallery\7.JPG
+  - img: assets\images\photogallery\8.JPG
+  - img: assets\images\photogallery\23.JPG
+  - img: assets\images\photogallery\24.JPG
+
