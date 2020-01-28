@@ -5,43 +5,41 @@
         var inputPAN = document.getElementById('inputPAN').value;
         var errcheck = document.getElementById('errcheck');
         var submitbutton = document.getElementById('submit');
-        amount.onekeyup = function(event){
-            if((inputAmount>2000) && (inputPAN=='')){
+        amount.onekeyup = function (event) {
+            if ((inputAmount > 2000) && (inputPAN == '')) {
                 errcheck.innerHTML = 'Please enter PAN no';
-                submitbutton.setAttribute("inactive",true)
+                submitbutton.setAttribute("inactive", true)
                 return false;
             }
-            else{
-                submitbutton.removeAttribute("inactive",false);
+            else {
+                submitbutton.removeAttribute("inactive", false);
                 return true;
             }
         }();
     }
-    function submitCheck(){
+    function submitCheck() {
         var amount = document.getElementById('inputAmount');
         var inputAmount = document.forms['RegForm']['amount'].value;
         var inputPAN = document.getElementById('inputPAN').value;
         var errcheck = document.getElementById('errcheck');
         var submitbutton = document.getElementById('submit');
-        submitbutton.onsubmit = function(event){
-            if((inputAmount>2000) && (inputPAN=='')){
-                alert("Enter your PAN number");
-                event.preventDefault();
-                event.stopPropagation();
-                return false;
-            }
-            else{
-                return true;
+        if ((inputAmount > 2000) && (inputPAN == '')) {
+            alert("Enter your PAN number");
+            // event.preventDefault();
+            // event.stopPropagation();
+            return false;
+        }
+        else {
+            return true;
         }
     }
-}
 </script>
-<form name="RegForm"  action="https://formspree.io/xknoeave"  method="POST">
+<form name="RegForm" action="https://formspree.io/xknoeave" onsubmit="return submitCheck();" method="POST" class="needs-validation">
     <div class="form-row">
         <div class="form-group col-xs-2"></div>
         <div class="form-group col-md-5">
             <label for="inputName">Name</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Joe Smith" name="name" required
+            <input type="text" class="form-control valid-feedback" id="inputName" placeholder="Joe Smith" name="name" required
                 autofocus>
         </div>
         <div class="form-group col-md-1"></div>
@@ -78,15 +76,16 @@
         <div class="form-group col-xs-2"></div>
         <div class="form-group col-md-5">
             <label for="inputAmount">Amount</label>
-            <input type="number" onkeyup="return checkvalid()" class="form-control" id="inputAmount" name="amount" required>
+            <input type="number" onkeyup="return checkvalid();" class="form-control" id="inputAmount" name="amount"
+                required>
         </div>
         <div class="form-group col-md-1"></div>
         <div class="form-group col-md-5">
             <label for="inputPAN">Pan No <span style="font-weight: 0.7rem;font-size: 0.7rem;">(On amount above
                     2000)</span></label>
-            <input type="text" class="form-control" id="inputPAN" name="PAN" >
+            <input type="text" class="form-control" id="inputPAN" name="PAN">
             <p id="errcheck"></p>
         </div>
     </div>
-    <input id="submit" type="submit" class="btn btn-outline-success" onsubmit="return submitCheck()">Sign in</button>
+    <input id="submit" type="submit" class="btn btn-outline-success" value="Sign in"/button>
 </form>
