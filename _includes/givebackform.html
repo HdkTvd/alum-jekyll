@@ -34,7 +34,7 @@
         }
     }
 </script>
-<form name="RegForm" action="https://formspree.io/xknoeave" onsubmit="return submitCheck();" method="POST" class="needs-validation">
+<form name="RegForm" action="https://formspree.io/xknoeave" method="POST" class="needs-validation">
     <div class="form-row">
         <div class="form-group col-xs-2"></div>
         <div class="form-group col-md-5">
@@ -67,8 +67,7 @@
                 <option value="Vayushastra">Vayushastra</option>
                 <option value="ProjectCell">ProjectCell</option>
                 <option value="AgnelCharityTrust">Agnel Charity Trust</option>
-                <option value="HalfSponsorship">Half Sponsorship</option>
-                <option value="FullSponsorship">Full Sponsorship</option>
+                <option value="Contibute to teams">Contibute to teams</option>
             </select>
         </div>
     </div>
@@ -81,9 +80,8 @@
         </div>
         <div class="form-group col-md-1"></div>
         <div class="form-group col-md-5">
-            <label for="inputPAN">Pan No <span style="font-weight: 0.7rem;font-size: 0.7rem;">(On amount above
-                    2000)</span></label>
-            <input type="text" class="form-control" id="inputPAN" name="PAN">
+            <label for="inputPAN">Pan No <span style="font-weight: 0.7rem;font-size: 0.7rem;"></span></label>
+            <input type="text" class="form-control" id="inputPAN" name="PAN" required>
             <p id="errcheck"></p>
         </div>
     </div>
