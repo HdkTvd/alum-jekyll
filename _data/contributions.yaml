@@ -44,4 +44,10 @@ alumnis:
   - name: Production Batch, 1991
     text: Donated around 2 lakhs towards the purchase of Solidworks,3D CAD design software, analysis software, and product data management software.
     batch: null
+  - name: Mr. Suresh Balakrishnan
+    text: Gave a scholarship of Rs.5 Lakhs to meritorious students through his foundation in year 2019-2020
+    batch: 1995, Production Batch
+  - name: Production Batch, 1994
+    text: Donated around 1.35 lakhs towards facility development in our institute
+    batch: null
     
