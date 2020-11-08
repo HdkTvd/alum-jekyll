@@ -1,7 +1,7 @@
 <footer class="container-fluid px-0">
     <div id="footer">
         {% for line in site.data.footer %}
-        <p> | {% for link in line %}<a href="{{ link.url }}">{{link.text}}</a> | {% endfor %} </p>
+        <p> | {% for comp in line %}<a href="{{ comp.link }}">{{comp.text}}</a> | {% endfor %} </p>
         {% endfor %}
         <p>Fr. Agnel Ashram, Bandstand, Bandra (W). Mumbai 400 050. MH. IN</p>
         <p>(91)-(022)-67114111 67114137, </p>
