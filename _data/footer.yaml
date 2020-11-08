@@ -1,5 +1,5 @@
 - 
   - text : Home
-    link : /index
+    url : /index.html
   - text : Contact Us
-    link : /contact
+    url : /contact.html
